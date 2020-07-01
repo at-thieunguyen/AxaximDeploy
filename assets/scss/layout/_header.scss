@@ -49,7 +49,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
+  background: $white;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   .navbar-header {
     @include pxRem(padding, 18 15);
@@ -66,14 +66,14 @@
 }
 .nav-item {
   .dropdown-item {
-    border-bottom: 1px solid #3e3e3e;
+    border-bottom: 1px solid #e7e7e7;
     padding: 10px !important;
   }
   .dropdown-toggle {
     // &::after {
     //   @include pxRem(margin-left, 6);
     //   @include pxRem(margin-top, 3);
-    //   content: "\f107";
+    //   content: "\f107" !important;
     //   font-family: "Font Awesome 5 Free";
     // }
     
