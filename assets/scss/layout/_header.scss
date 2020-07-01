@@ -65,6 +65,10 @@
   background-color: #1b263a;
 }
 .nav-item {
+  .dropdown-item {
+    border-bottom: 1px solid #3e3e3e;
+    padding: 10px !important;
+  }
   .dropdown-toggle {
     // &::after {
     //   @include pxRem(margin-left, 6);
@@ -72,6 +76,7 @@
     //   content: "\f107";
     //   font-family: "Font Awesome 5 Free";
     // }
+    
   }
   a {
     @include pxRem(padding, 20 10);
