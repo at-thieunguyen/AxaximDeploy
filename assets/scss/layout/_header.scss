@@ -1,0 +1,107 @@
+.background-dark {
+  background-color: $primary;
+}
+.top-navbar {
+  @include pxRem(padding, 11 0);
+  .user-login {
+    @include pxRem(margin, 3 0);
+    display: flex;
+    justify-content: flex-end;
+    a {
+      @include pxRem(margin-left, 8);
+      @include pxRem(padding, 8 25);
+      @include pxRem(border-radius, 5);
+      background: $secondary none repeat scroll 0 0;
+      color: $primary;
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      i {
+        @include pxRem(padding, 4);
+      }
+    }
+  }
+  .box-contact {
+    display: flex;
+    .box-contact-item {
+      @include pxRem(margin-right, 18);
+      @include pxRem(padding-right, 20);
+      @include pxRem(line-height, 24);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: "Poppins", sans-serif;
+      color: $white;
+      span {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        border: medium none;
+        margin: 0;
+      }
+    }
+    i {
+      @include pxRem(margin-right, 6);
+    }
+  }
+}
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  .navbar-header {
+    @include pxRem(padding, 18 15);
+    @include pxRem(margin-left, -15);
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+.header-top {
+  @include pxRem(padding, 8 0);
+  background-color: #1b263a;
+}
+.nav-item {
+  .dropdown-toggle {
+    // &::after {
+    //   @include pxRem(margin-left, 6);
+    //   @include pxRem(margin-top, 3);
+    //   content: "\f107";
+    //   font-family: "Font Awesome 5 Free";
+    // }
+  }
+  a {
+    @include pxRem(padding, 20 10);
+    color: #3e3e3e;
+    font-size: 13.5px;
+    font-weight: 600;
+    i {
+      @include pxRem(font-size, 16);
+    }
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+  }
+}
+
+.img-logo-light {
+  height: 18px;
+}
+.show {
+  display: block;
+}
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown {
+  .dropdown-toggle:active {
+    pointer-events: none;
+  }
+}
