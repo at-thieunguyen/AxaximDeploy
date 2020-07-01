@@ -13,7 +13,7 @@
     position: relative;
   }
   .content {
-    @include pxRem(padding, 80 15);
+    @include pxRem(padding, 80 40);
   }
   .site-heading-wcu {
     @include pxRem(margin-bottom, 20);
