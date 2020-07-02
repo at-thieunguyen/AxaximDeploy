@@ -2,13 +2,10 @@
   .carousel-slide {
     position: relative;
     width: 100%;
-    .shadow {
-      position: relative;
-      z-index: 1;
-    }
     .content-box-cell {
       position: absolute;
       top: 50%;
+      z-index: 10;
     }
   }
   .banner {
@@ -25,6 +22,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.shadow {
+  position: relative;
+  z-index: 1;
+  &::after {
+    background: #002147 none repeat scroll 0 0;
+    content: "";
+    height: 942px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }
 .bg-cover {
   background-position: center;
