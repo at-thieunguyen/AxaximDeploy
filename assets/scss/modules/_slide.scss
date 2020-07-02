@@ -19,23 +19,19 @@
 }
 .bg-fixed {
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .shadow {
   position: relative;
   z-index: 1;
   &::after {
-    background: #002147 none repeat scroll 0 0;
+    position: absolute;
+    background-color: #002147;
     content: "";
     height: 100%;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
     width: 100%;
-    z-index: -1;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
   }
 }
 .bg-cover {
