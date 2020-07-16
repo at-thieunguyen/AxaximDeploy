@@ -101,8 +101,12 @@
           cursor: pointer;
         }
         .list-courses {
+          @include pxRem(font-size, 14);
           display: flex;
           justify-content: space-between;
+          color: $black;
+          font-weight: 600;
+          text-transform: uppercase;
           &::after {
             content: "\f105";
             font-family: "Font Awesome 5 Free";
@@ -123,8 +127,20 @@
             .title-panel {
               @include pxRem(font-size, 15);
             }
+            .lecture-name {
+              @include pxRem(padding-right, 20);
+            }
           }
-          
+          .btn-panel {
+            @include pxRem(margin-left, 10);
+            @include pxRem(border-radius, 5);
+            @include pxRem(font-size, 12);
+            @include pxRem(padding, 6 15);
+            background: $primary;
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
         }
         .panel-content-item {
           @include pxRem(padding, 20);
@@ -161,11 +177,6 @@
     .btn-tab {
       @include pxRem(margin-bottom, 15);
       display: flex;
-      .tab-link {
-        :target {
-          background-color: $secondary;
-        }
-      }
     }
     .title-courses-detail {
       font-weight: 600;
