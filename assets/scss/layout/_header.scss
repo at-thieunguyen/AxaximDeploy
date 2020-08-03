@@ -7,7 +7,7 @@
     @include pxRem(margin, 3 0);
     display: flex;
     justify-content: flex-end;
-    a {
+    .popup-with-form {
       @include pxRem(margin-left, 8);
       @include pxRem(padding, 8 25);
       @include pxRem(border-radius, 5);
@@ -16,6 +16,7 @@
       display: inline-block;
       font-weight: 600;
       text-decoration: none;
+      cursor: pointer;
       i {
         @include pxRem(padding, 4);
       }
@@ -64,7 +65,7 @@
       background: $white;
       overflow: auto;
       transition: right 0.5s;
-      right: -100%;
+      right: -120%;
       box-shadow: 0 15px 40px -5px rgba(0, 0, 0, 0.1);
       &.move {
         right: 0;
@@ -200,4 +201,8 @@
 }
 .pd-item {
   @include pxRem(padding, 25);
+}
+.header-text {
+  @include pxRem(margin-top, 10);
+  color: $white;
 }
